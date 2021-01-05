@@ -10,6 +10,8 @@ import { PaginationModule } from '../../components/pagination/pagination.module'
 import { SearchBarModule } from '../../components/search-bar/search-bar.module';
 import { SearchResultModule } from '../../components/search-result/search-result.module';
 
+import { ConfigService } from '../../services/config/config.service';
+
 @NgModule({
   declarations: [
     CitiesListComponent,
@@ -27,6 +29,7 @@ import { SearchResultModule } from '../../components/search-result/search-result
     CitiesListComponent
   ],
   providers: [
+    ConfigService,
   ],
 })
 export class CitiesListModule { }

@@ -314,5 +314,31 @@
         "defaultvalue": ""
       }
     ]
+  },
+  {
+    "name": "websites",
+    "pk": true,
+    "fields": [
+      {
+        "name": "website_id",
+        "domain": "dom_fk",
+        "defaultvalue": 0
+      },
+      {
+        "name": "name",
+        "domain": "dom_lib",
+        "defaultvalue": ""
+      },
+      {
+        "name": "url",
+        "domain": "dom_lib",
+        "defaultvalue": ""
+      },
+      {
+        "name": "description",
+        "domain": "dom_lib",
+        "defaultvalue": ""
+      }
+    ]
   }
 ]

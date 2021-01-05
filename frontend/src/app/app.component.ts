@@ -8,74 +8,55 @@ import { Renderer2 } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  location = window.location.href;
   title = 'angular-starter';
   version = 'Angular version 11.0.5';
   items = [
     {
-      name: 'Reactive Form', link: 'reactive-form',
+      name: 'Forms', link: 'reactive-form',
       elements: [
-        { name: 'prototype', link: 'reactive-form/prototype' },
-        { name: 'form-control', link: 'reactive-form/form-control' },
-        { name: 'form-control-class', link: 'reactive-form/form-control-class' },
-        { name: 'form-group', link: 'reactive-form/form-group' },
-        { name: 'form-builder', link: 'reactive-form/form-builder' },
-        { name: 'form-builder-nested', link: 'reactive-form/form-builder-nested' },
-        { name: 'form-array', link: 'reactive-form/form-array' },
-        { name: 'form-multi', link: 'reactive-form/form-multi' },
+        /*
+        { name: 'Prototype', link: 'reactive-form/prototype' },
+        { name: 'Form-Control', link: 'reactive-form/form-control' },
+        { name: 'Form-Control-Class', link: 'reactive-form/form-control-class' },
+        */
+        { name: 'Form-Group', link: 'reactive-form/form-group' },
+        /*
+        { name: 'Form-Builder', link: 'reactive-form/form-builder' },
+        { name: 'Form-Builder-Nested', link: 'reactive-form/form-builder-nested' },
+        { name: 'Form-Array', link: 'reactive-form/form-array' },
+        { name: 'Form-Multi', link: 'reactive-form/form-multi' },
+        */
       ]
     },
     {
       name: 'Features', link: 'Features',
       elements: [
-        { name: 'charts', link: 'charts' },
-        { name: 'leaflet', link: 'leaflet' },
-        { name: 'movies-images-list', link: 'movies-images-list' },
-        { name: 'httpclient', link: 'httpclient' },
-        { name: 'template-driven-forms', link: 'template-driven-forms' },
-        { name: 'components', link: 'components' },
-        { name: 'services', link: 'services' }
+        { name: 'Chart.js Charts', link: 'charts' },
+        { name: 'Leaflet', link: 'leaflet' },
+        /* { name: 'Movies-Images-List', link: 'movies-images-list' }, */
+        { name: 'HttpClient', link: 'httpclient' },
+        { name: 'Template-Driven-Forms', link: 'template-driven-forms' },
+        { name: 'Components', link: 'components' },
+        { name: 'Services', link: 'services' },
       ]
     },
     {
       name: 'CRUD', link: 'crud',
       elements: [
-        { name: 'continents', link: 'crud/continents' },
-        { name: 'countries', link: 'crud/countries' },
-        { name: 'cities', link: 'crud/cities' },
-        { name: 'shows', link: 'crud/shows' },
-        { name: 'movies', link: 'crud/movies' },
-        { name: 'shows-images', link: 'crud/shows-images' },
-        { name: 'movies-images', link: 'crud/movies-images' },
+        //{ name: 'Continents', link: 'crud/continents' },
+        //{ name: 'Countries', link: 'crud/countries' },
+        //{ name: 'Cities', link: 'crud/cities' },
+        { name: 'Shows', link: 'crud/shows' },
+        /* { name: 'Movies', link: 'crud/movies' }, */
+        { name: 'Shows-Images', link: 'crud/shows-images' },
+        /* { name: 'Movies-Images', link: 'crud/movies-images' }, */
       ]
     },
     {
-      name: 'Typescript', link: 'typescript',
+      name: 'Sandbox', link: 'typescript',
       elements: [
-        { name: 'modules', link: 'typescript/modules' },
-        { name: 'interfaces', link: 'typescript/interfaces' },
-        { name: 'classes', link: 'typescript/classes' },
-        { name: 'functions', link: 'typescript/functions' },
-        { name: 'types', link: 'typescript/types' },
-        { name: 'typing-function', link: 'typescript/typing-function' },
-      ]
-    },
-    {
-      name: 'bootstrap-prototype', link: 'bootstrap-prototype',
-      elements: [
-        { name: 'alerts', link: 'bootstrap-prototype/alerts' },
-        { name: 'badge', link: 'bootstrap-prototype/badge' },
-        { name: 'blockquotes', link: 'bootstrap-prototype/blockquotes' },
-        { name: 'breadcrumb', link: 'bootstrap-prototype/breadcrumb' },
-        { name: 'buttons', link: 'bootstrap-prototype/buttons' },
-        { name: 'collapse', link: 'bootstrap-prototype/collapse' },
-        { name: 'dropdowns', link: 'bootstrap-prototype/dropdowns' },
-        { name: 'forms', link: 'bootstrap-prototype/forms' },
-        { name: 'list-group', link: 'bootstrap-prototype/list-group' },
-        { name: 'modal', link: 'bootstrap-prototype/modal' },
-        { name: 'pagination', link: 'bootstrap-prototype/pagination' },
-        { name: 'popovers', link: 'bootstrap-prototype/popovers' },
-        { name: 'progress', link: 'bootstrap-prototype/progress' },
-        { name: 'spinners', link: 'bootstrap-prototype/spinners' },
+        { name: 'Toxic-Class', link: 'typescript/toxic-class' },
       ]
     },
   ];
@@ -89,6 +70,7 @@ export class AppComponent {
     this.renderer.removeClass(element, 'show');
     const route = '/' + link;
     this.router.navigate([route]);
+    this.location = window.location.href;
   }
 
 

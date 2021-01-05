@@ -25,13 +25,12 @@ export class ExerciceComponent implements OnInit {
 
   updateControls(): void {
     this.exampleForm.patchValue({
-      name: 'Avengers: Endgame',
-      releaseDate: '26/04/2019',
+      name: 'Star Wars IV: A New Hope',
+      releaseDate: '05/25/1977',
       franchise: true,
-      budget: 356000000,
-      worldwide: 2797800564,
-      summary: 'After the devastating events of Avengers: Infinity War (2018), ' +
-        'the universe is in ruins.'
+      budget: 11000000,
+      worldwide: 7758000000,
+      summary: 'A long time ago in a galaxy far, far away...'
     });
   }
 

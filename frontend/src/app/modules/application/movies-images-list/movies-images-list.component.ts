@@ -23,7 +23,7 @@ export class MoviesImagesListComponent extends PageListComponent implements OnIn
 
     this.endpoint = 'movies';
     this.link = 'movies';
-    this.placeholder = 'movies...';
+    this.placeholder = 'Search movies';
     this.results = 'Movies';
     this.found = 'movies';
     this.creation = 'Movie';
@@ -43,11 +43,6 @@ export class MoviesImagesListComponent extends PageListComponent implements OnIn
   }
 
   ngOnInit(): void {
-    this.titleService.setTitle('New Movies: angular.ganatan');
-    this.meta.addTag({
-      name: 'angular.ganatan',
-      content: 'danny ganatan'
-    });
     this.meta.updateTag(
       {
         name: 'description',

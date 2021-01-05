@@ -1,12 +1,65 @@
-<div class="row">
-  <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-    <p class="text-center">contact works!</p>
-    <ul>
-      <li><a routerLink="/contact/mailing">Mailing</a></li>
-      <li><a routerLink="/contact/map">Map</a></li>
-    </ul>
-  </div>
-  <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
-    <router-outlet></router-outlet>
-  </div>
-</div>
+<div class="row whole cascade  pt-1 mb-2">
+    <div class="center">
+    <h1>
+      <i class="fas fa-male"></i>
+      Contact
+    </h1>
+    </div>
+    <br>
+    <hr>
+      <div class="col-12 col-md-6 text-center mb-2">
+        <br>
+        <h1 class="h5 mb-4 text-dark">
+          <strong class="front-end text-dark">Patrick Kendall</strong></h1>
+        <blockquote class="blockquote bq-dark">
+          <img class="about-profile-pic" src="https://media-exp1.licdn.com/dms/image/C4E03AQE6XEgz6Vq_tg/profile-displayphoto-shrink_200_200/0/1607376879265?e=1614816000&v=beta&t=opzrW7SyzKGkPIyOW1aRmI2lKmigcqN4qe3X1cl3kMY">
+        </blockquote>
+        <blockquote class="blockquote bq-dark">
+          <div class="row"> <i class="fas fa-laptop fa-sm mt-1 mb-1 mr-3 ml-3" aria-hidden="true"></i>
+            <h2 class="h5 font-weight-bold">Skills</h2>
+          </div>
+          <div class="row ml-4">
+            <div class="col">
+              <table class="table table-hover table-striped table-bordered table-responsive-md table-sm">
+                <thead>
+                  <tr>
+                    <th class="h6 font-weight-bold text-center">Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of features.frontend">
+                    <td class="h6 font-weight-bold text-center">{{ item.name }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+    
+      <div class="col-12 col-md-6 text-center mb-2">
+        <br>
+        <h1 class="h5 mb-4 text-dark">
+          <strong class="back-end text-dark">Back End</strong></h1>
+        <blockquote class="blockquote bq-dark">
+          <div class="row"> <i class="fas fa-laptop fa-sm mt-1 mb-1 mr-3 ml-3" aria-hidden="true"></i>
+            <h3 class="h5 font-weight-bold">Languages/Frameworks</h3>
+          </div>
+          <div class="row ml-4" *ngFor="let item of dependencies.backend">
+            <h5 class="h6 font-weight-bold dark-grey-text ml-2"><i
+                aria-hidden="true"></i>{{item.name }}</h5>
+          </div>
+        </blockquote>
+        <blockquote class="blockquote bq-dark">
+          <h1 class="h5 mb-4 text-dark">
+            <strong class="front-end text-dark">Front End</strong></h1>
+          <div class="row"> <i class="fas fa-laptop fa-sm mt-1 mb-1 mr-3 ml-3" aria-hidden="true"></i>
+            <h3 class="h5 font-weight-bold">Languages/Frameworks</h3>
+          </div>
+          <div class="row ml-4" *ngFor="let item of dependencies.frontend">
+            <h5 class="h6 font-weight-bold dark-grey-text ml-2"><i
+                aria-hidden="true"></i>{{item.name }}</h5>
+          </div>
+        </blockquote>
+      </div>
+    </div>

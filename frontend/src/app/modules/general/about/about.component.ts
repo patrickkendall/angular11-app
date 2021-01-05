@@ -13,90 +13,86 @@ export class AboutComponent {
   constructor() {
     this.dependencies = {
       frontend: [
-        { name: 'Angular 11.0.5' },
-        { name: 'Angular CLI 11.0.5' },
-        { name: 'Angular Universal 11.0.1' },
-        { name: 'Font Awesome 5.15.1' },
-        { name: 'Bootstrap 5.0.0-beta1' },
+        { name: 'Angular' },
+        { name: 'React' },
+        { name: 'TypeScript' },
+        { name: 'JavaScript' },
+        { name: 'HTML' },
+        { name: 'CSS' },
       ],
       backend: [
         { name: 'Node.js' },
         { name: 'Express' },
-        { name: 'pg-promise' },
+        { name: 'REST APIs' },
+        { name: '.NET' },
+        { name: 'Golgang' },
+        { name: 'CRUD' },
       ]
     };
 
     this.features = {
       frontend: [
         {
-          name: 'Angular CLI',
+          name: 'Angular',
           englishTutorial: 'https://www.ganatan.com/tutorials/getting-started-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/demarrer-avec-angular',
         },
         {
-          name: 'Routing',
+          name: 'React',
           englishTutorial: 'https://www.ganatan.com/tutorials/routing-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/routing-avec-angular',
         },
         {
-          name: 'Lazy loading',
+          name: 'JavaScript',
           englishTutorial: 'https://www.ganatan.com/tutorials/lazy-loading-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/lazy-loading-avec-angular',
         },
         {
-          name: 'Bootstrap',
+          name: 'TypeScript',
           englishTutorial: 'https://www.ganatan.com/tutorials/bootstrap-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/bootstrap-avec-angular',
         },
         {
-          name: 'Server side Rendering',
+          name: 'HTML',
           englishTutorial: 'https://www.ganatan.com/tutorials/server-side-rendering-with-angular-universal',
           frenchTutorial: 'https://www.ganatan.com/tutorials/server-side-rendering-avec-angular-universal',
         },
         {
-          name: 'HTTPClient',
+          name: 'CSS',
           englishTutorial: 'https://www.ganatan.com/tutorials/httpclient-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/httpclient-avec-angular',
         },
         {
-          name: 'Transfer State',
+          name: 'Express',
           englishTutorial: 'https://www.ganatan.com/tutorials/transfer-state-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/transfer-state-avec-angular',
         },
         {
-          name: 'Progressive Web App',
+          name: 'MongoDB',
           englishTutorial: 'https://www.ganatan.com/tutorials/progressive-web-app-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/progressive-web-app-avec-angular',
         },
         {
-          name: 'Search Engine optimization',
+          name: 'Firebase',
           englishTutorial: 'https://www.ganatan.com/tutorials/search-engine-optimization-with-angular',
           frenchTutorial: 'https://www.ganatan.com/tutorials/search-engine-optimization-avec-angular',
         },
         {
-          name: 'Components',
+          name: 'MySQL',
           englishTutorial: null,
           frenchTutorial: 'https://www.ganatan.com/tutorials/components-avec-angular',
         },
         {
-          name: 'Services',
+          name: 'Linux',
           englishTutorial: null,
           frenchTutorial: 'https://www.ganatan.com/tutorials/services-avec-angular',
         },
         {
-          name: 'Responsive Images List',
+          name: 'Node.js',
           englishTutorial: null,
           frenchTutorial: null,
         },
       ],
-      backend: [
-        { name: 'Local JSON' },
-        { name: 'RESTFull API' },
-        { name: 'CRUD API' },
-        { name: 'Database Creation' },
-        { name: 'Data Import' },
-        { name: 'Data Export' },
-      ]
     };
 
   }

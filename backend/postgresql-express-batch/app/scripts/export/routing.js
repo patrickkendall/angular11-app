@@ -7,7 +7,7 @@ const genres = require('./genres');
 const movies = require('./movies');
 const persons = require('./persons');
 const professions = require('./professions');
-const users = require('./users');
+const websites = require('./websites');
 
 async function exportItems(db, param) {
   if (param.endpoint === 'cities') { return await cities.exportItems(db, param); }
@@ -20,6 +20,7 @@ async function exportItems(db, param) {
   if (param.endpoint === 'persons') { return await persons.exportItems(db, param); }
   if (param.endpoint === 'professions') { return await professions.exportItems(db, param); }
   if (param.endpoint === 'users') { return await users.exportItems(db, param); }
+  if (param.endpoint === 'websites') { return await websites.exportItems(db, param); }
 }
 
 module.exports = {

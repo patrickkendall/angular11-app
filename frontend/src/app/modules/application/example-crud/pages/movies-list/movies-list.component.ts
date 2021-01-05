@@ -18,7 +18,7 @@ export class MoviesListComponent extends PageListComponent {
 
     this.endpoint = 'movies';
     this.link = 'movies';
-    this.placeholder = 'movies...';
+    this.placeholder = 'Search movies';
     this.results = 'Movies';
     this.found = 'movies';
     this.creation = 'Movie';
@@ -31,22 +31,22 @@ export class MoviesListComponent extends PageListComponent {
     this.columns = [
       {
         type: 'num',
-        title: { caption: 'N°', class: 'text-info font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
-        data: { field: 'N°', class: 'text-info text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
+        title: { caption: 'N°', class: 'text-dark font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
+        data: { field: 'N°', class: 'text-dark text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
       },
       {
         type: 'pos',
-        title: { caption: 'Pos', class: 'text-info font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
-        data: { field: 'Pos', class: 'text-info text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
+        title: { caption: 'Pos', class: 'text-dark font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
+        data: { field: 'Pos', class: 'text-dark text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
       },
       {
-        title: { caption: 'Id', class: 'text-info font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
-        data: { field: 'id', class: 'text-info text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
+        title: { caption: 'Id', class: 'text-dark font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
+        data: { field: 'id', class: 'text-dark text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
       },
       {
         type: 'wiki',
-        title: { caption: 'Wiki', class: 'text-center text-success' },
-        data: { field: 'wikipediaLink', class: 'text-center text-success' }
+        title: { caption: 'Wiki', class: 'text-center text-dark' },
+        data: { field: 'wikipediaLink', class: 'text-center text-dark' }
       },
       {
         type: 'smallimg',
@@ -54,8 +54,8 @@ export class MoviesListComponent extends PageListComponent {
         data: { field: 'image', class: 'font-weight-bold text-center', height: 129, width: 90 }
       },
       {
-        title: { caption: 'Name', class: 'text-primary font-weight-bold text-center' },
-        data: { field: 'name', class: 'text-primary font-weight-bold text-center' }
+        title: { caption: 'Name', class: 'text-dark font-weight-bold text-center' },
+        data: { field: 'name', class: 'text-dark font-weight-bold text-center' }
       },
       {
         title: { caption: 'Date', class: 'font-weight-bold text-center' },

@@ -1,21 +1,29 @@
+
+<div class="">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">NestedForm Group</h5>
+      <hr>
+      <p class="card-text">Smooth use of reactive form groups with nested JSON</p>
+    </div>
+  </div>
 <div class="card">
   <div class="card-body">
     <div class="row">
-      <div class="col-7">
-        <h5 class="card-title text-center text-info">Nested FormBuilder</h5>
+      <div class="">
         <form [formGroup]="exampleForm">
           <div class="form-row">
-            <div class="form-group col-md-9">
+            <div class="form-group ">
               <label for="name">Name</label>
               <input type="text" class="form-control" id="name" formControlName="name">
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group ">
               <label for="releaseDate">Date</label>
               <input type="text" class="form-control" id="releaseDate" formControlName="releaseDate">
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-md-12">
+            <div class="form-group ">
               <label for="summary">Summary</label>
               <textarea class="form-control" id="summary" rows="2" formControlName="summary"></textarea>
             </div>
@@ -29,32 +37,33 @@
             </div>
           </div>
           <div class="card p-4 mb-4">
-            <h5 class="card-title text-center text-info">Nested Controls</h5>
+            <h5 class="card-title text-center text-dark">Nested Controls</h5>
             <div class="form-row" formGroupName="boxoffice">
-              <div class="form-group col-md-3">
+              <div class="form-group ">
                 <label for="budget">Budget</label>
                 <input type="text" class="form-control" id="budget" formControlName="budget">
               </div>
-              <div class="form-group col-md-3">
+              <div class="form-group ">
                 <label for="international">International</label>
                 <input type="text" class="form-control" id="budget" formControlName="international">
               </div>
-              <div class="form-group col-md-3">
+              <div class="form-group ">
                 <label for="domestic">Domestic</label>
                 <input type="text" class="form-control" id="budget" formControlName="domestic">
               </div>
-              <div class="form-group col-md-3">
+              <div class="form-group ">
                 <label for="worldwide">Worlwide</label>
                 <input type="text" class="form-control" id="worldwide" formControlName="worldwide">
               </div>
             </div>
           </div>
-          <button type="submit" (click)="resetControls()" class="btn btn-info mr-2">Reset Controls</button>
-          <button type="submit" (click)="updateControls()" class="btn btn-info mr-2">Update Controls</button>
+          <button type="submit" (click)="resetControls()" class="btn btn-dark mr-2">Reset Controls</button>
+          <button type="submit" (click)="updateControls()" class="btn btn-dark mr-2">Update Controls</button>
         </form>
+        <br>
       </div>
-      <div class="col-5">
-        <h5 class="card-title text-center text-info">Nested FormBuilder Results</h5>
+      <div class="">
+        <h5 class="card-title text-center text-dark">Nested FormBuilder Results</h5>
         <strong>Form Value</strong>
         <div [innerHTML]="exampleForm.value | prettyjson"></div>
         <strong>Nested Controls Value</strong>

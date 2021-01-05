@@ -1,0 +1,33 @@
+<div class="card">
+    <div>
+        <h1>Toxic Phrase Test</h1>
+        <hr>
+    </div>
+    <div class="output-container">
+        <img *ngIf="!toxicity" class="img" src="https://th.bing.com/th/id/Re8c53ad64d8593b289e8ceceb783660e?rik=%2bY81hYZ5AudKIg&riu=http%3a%2f%2fwww.hdwallpaperspulse.com%2fwp-content%2fuploads%2f2012%2f10%2fsmiley-flower-happy-wallpaper.jpg&ehk=MQJKEcWpvko3Kw40Scg2W6ukExXkjSKwtE5JrTBbJX4%3d&risl=&pid=ImgRaw">
+        <img *ngIf="toxicity" class="img" src="https://i2-prod.mirror.co.uk/tech/article7906240.ece/ALTERNATES/s615/Ryan-Watkins-Hell-Vista.jpg">
+    <div class="input-container">
+        <input #buffer (change)="onChange(); checkTime(buffer.value)">
+    </div>
+</div>
+<div class="table">
+    <table>
+        <tr>
+          <th>Phrase</th>
+          <th>Toxic?</th>
+          <th>Toxic Score</th>
+        </tr>
+        <tr>
+          <th>happy</th>
+          <th>false</th>
+          <th>0.000957</th>
+        </tr>
+          <tr *ngFor="let output of outputPhrase">
+            <td>{{output.phrase}}</td>
+            <td>{{output.isToxic}}</td>
+            <td>{{output.toxicScore}}</td>
+          </tr>
+      </table>
+</div>
+<canvas class="card" baseChart [datasets]="datasets" [options]="options" [chartType]="type" [colors]="colors">
+</canvas>

@@ -54,6 +54,17 @@ CREATE TABLE city
     capital dom_boolean
 );
 
+CREATE SEQUENCE website_id_seq INCREMENT 1 MINVALUE 1 MAXVALUE 9223372036854775807 START 1000 CACHE 1;
+ALTER SEQUENCE website_id_seq OWNER TO postgres;
+CREATE TABLE websites
+(
+    id dom_pk PRIMARY KEY NOT NULL DEFAULT nextval('website_id_seq'::regclass),
+    name dom_lib NOT NULL,
+    url dom_lib NOT NULL,
+    desc dom_lib NOT NULL,
+    website_id dom_fk NOT NULL
+);
+
 
 CREATE SEQUENCE gender_id_seq INCREMENT 1 MINVALUE 1 MAXVALUE 9223372036854775807 START 1000 CACHE 1;
 ALTER SEQUENCE gender_id_seq OWNER TO postgres;

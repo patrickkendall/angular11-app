@@ -10,6 +10,7 @@ const professions = require('./professions');
 const trailers = require('./trailers');
 const users = require('./users');
 const views = require('./views');
+const websites = require('./websites');
 
 async function createItem(db, param, item, index) {
   if (param.endpoint === 'cities') { return await cities.createItem(db, param, item, index); }
@@ -24,6 +25,7 @@ async function createItem(db, param, item, index) {
   if (param.endpoint === 'trailers') { return await trailers.createItem(db, param, item, index); }
   if (param.endpoint === 'users') { return await users.createItem(db, param, item, index); }
   if (param.endpoint === 'views') { return await views.createItem(db, param, item, index); }
+  if (param.endpoint === 'websites') { return await websites.createItem(db, param, item, index); }
 }
 
 module.exports = {

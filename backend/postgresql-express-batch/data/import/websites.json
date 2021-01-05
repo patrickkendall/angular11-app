@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "website_id": 0,
+        "name": "Argilach",
+        "url":"https://argilach-5a35f.web.app/p-fb-sign-in",
+        "description":"First website with Chart.js, dyn PIN:60160530"
+    },
+    {
+        "id":2,
+        "website_id": 1,
+        "name": "Lite-Dash",
+        "url":"https://argilach-5a35f.web.app/p-fb-sign-in",
+        "description":"More Chart.js cleaner code base."
+    },
+    {
+        "id":3,
+        "website_id": 2,
+        "name": "Chat App",
+        "url":"https://argilach-5a35f.web.app/p-fb-sign-in",
+        "description":"React chatting application with Firebase."
+    }
+]

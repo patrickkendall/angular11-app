@@ -1,0 +1,20 @@
+[
+    {
+        "website_id": 0,
+        "name": "Argilach",
+        "url":"https://argilach-5a35f.web.app/p-fb-sign-in",
+        "description":"First website with Chart.js, dynamic charts connection to MySQL, added features, searches, kpis. Email: example@gmail.com, Password: example PIN:60160530"
+    },
+    {
+        "website_id": 1,
+        "name": "Lite-Dash",
+        "url":"https://argilach-5a35f.web.app/p-fb-sign-in",
+        "description":"More Chart.js cleaner code base."
+    },
+    {
+        "website_id": 2,
+        "name": "Chat App",
+        "url":"https://argilach-5a35f.web.app/p-fb-sign-in",
+        "description":"React chatting application with Firebase."
+    }
+]

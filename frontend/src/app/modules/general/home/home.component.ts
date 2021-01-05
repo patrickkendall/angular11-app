@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import { environment } from '../../../../environments/environment';
+import { environment } from '../../../../environments/environment.prod';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,7 @@ import { environment } from '../../../../environments/environment';
 })
 export class HomeComponent implements OnInit {
 
-  name = environment.application.name;
+  name = "Grid Card Layout";
   angular = environment.application.angular;
   bootstrap = environment.application.bootstrap;
   fontawesome = environment.application.fontawesome;
@@ -22,68 +22,50 @@ export class HomeComponent implements OnInit {
     this.features =
       [
         {
-          type: 'Responsive Images list',
-          description: 'Display a Responsive List of Images, Marvel Cinematic Universe for the fun',
-          image: 'demo-responsive-images-list.png',
-          link: 'movies-images-list'
+          type: 'Argilach Data Visualizations',
+          description:'This is a data visualization template made using Angular on the front-end, MySQL to pull in data from a database and express to act as the API. Chart.js was the visualization tool and it is very capable. It has many libraries that can easily be used using simple JSON structures and can be made dynamic using the right algorithim.',
+          image: 'Argilach.jpg',
+          link: ''
         },
         {
-          type: 'Bootstrap Prototype',
-          description: 'Bootstrap Prototype , Badges, Buttons, Collapse, Popovers, Toasts, Tooltips',
-          image: 'demo-bootstrap-prototype.png',
-          link: 'bootstrap-prototype'
+          type: 'MEAN Stack UI',
+          description: 'This is a UI a built fas an improvement for a prior MEAN stack application that has built in CRUD operations. This in an improvement of the UI.',
+          image: 'MEAN.jpg',
+          link: 'MEAN.jpg'
         },
         {
-          type: 'Reactive Form',
-          description: 'A model-driven approach to handling form inputs',
-          image: 'demo-reactive-forms.png',
-          link: 'reactive-form'
+          type: 'IM Chatting Ap',
+          description: 'The NYC skyline from the shore',
+          image: 'ChatApp.jpg',
+          link: ''
         },
         {
-          type: 'Services',
-          description: 'Use services to view a playlist and a youtube player',
-          image: 'demo-services-playlist-youtube.png',
-          link: 'services'
+          type: 'TensorFlow AI Visualization',
+          description: 'Electric city fills up this photo with lighting that can be seen from space',
+          image: 'TensorPoc.jpg',
+          link: 'TensorPOC'
         },
         {
-          type: 'Components',
-          description: 'Smartphone Component with Input, Output and Event Emitter',
-          image: 'demo-components.png',
+          type: '',
+          description: 'Dark blues with a changing sunset in the background',
+          image: 'LiteDash.jpg',
           link: 'components'
         },
         {
           type: 'HttpClient',
-          description: 'Use an external API with the HttpClient module',
-          image: 'demo-httpclient.png',
+          description: 'A busy night in a city that never stops moving',
+          image: 'city7.webp',
           link: 'httpclient'
-        },
-        {
-          type: 'Template Driven Forms',
-          description: 'Forms are the mainstay of business applications',
-          image: 'demo-template-driven-forms.png',
-          link: 'template-driven-forms'
-        },
-        {
-          type: 'Charts',
-          description: 'Integrate the open-source library Chart.js',
-          image: 'demo-charts.png',
-          link: 'charts'
-        },
-        {
-          type: 'Leafleft',
-          description: 'An open-source JavaScript library for mobile-friendly interactive maps',
-          image: 'demo-leaflet-feature.png',
-          link: 'leaflet'
-        },
+        }
       ];
 
   }
 
   ngOnInit(): void {
-    this.titleService.setTitle('angular.ganatan: Une Application Web avec Angular');
+    this.titleService.setTitle('Angular11');
     this.meta.addTag({
       name: 'author',
-      content: 'danny ganatan'
+      content: 'Patrick Kendall'
     });
     this.meta.updateTag(
       {

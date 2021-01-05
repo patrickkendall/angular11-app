@@ -1,0 +1,46 @@
+* {
+    color: black;
+}
+
+.whole {
+    box-shadow: 2px 2px 2px #888888;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.whole:hover {
+    box-shadow: 7px 7px 7px #888888;
+}
+
+.front-end {
+    color: rgb(83, 92, 83);
+}
+
+.back-end {
+    color: rgb(83, 92, 83);
+}
+
+.row {
+}
+
+.about-profile-pic {
+    width: 105px;
+    height: 105px;
+    border-radius: 10px;
+}
+
+.center {
+    margin-top: 5px;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+  }
+
+h1 {
+    color: black !important;
+}
+
+hr {
+    margin-top: 10px;
+    bottom: 5px;
+}

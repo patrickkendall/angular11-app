@@ -13,6 +13,7 @@
     "import-countries": "node app/scripts/import/execute --endpoint=countries",
     "import-genders": "node app/scripts/import/execute --endpoint=genders",
     "import-genres": "node app/scripts/import/execute --endpoint=genres",
+    "import-websites": "node app/scripts/import/execute --endpoint=websites",
     "import-movies": "node app/scripts/import/execute --endpoint=movies",
     "import-persons": "node app/scripts/import/execute --endpoint=persons",
     "import-professions": "node app/scripts/import/execute --endpoint=professions",
@@ -32,8 +33,8 @@
     "export-trailers": "node app/scripts/export/trailers",
     "export-users": "node app/scripts/export/execute --endpoint=users",
     "export-views": "node app/scripts/export/views",
-    "import-generics": "npm run import-users && npm run import-continents && npm run import-countries && npm run import-cities",
-    "import-items": "npm run import-companies && npm run import-genres && npm run import-genders && npm run import-professions && npm run import-movies && npm run import-persons",
+    "import-generics": "npm run import-users && npm run import-continents && npm run import-countries && npm run import-cities && npm run import-websites",
+    "import-items": "npm run import-companies && npm run import-genres && npm run import-genders && npm run import-professions && npm run import-movies && npm run import-persons && npm run import-websites",
     "export-generics": "npm run export-users && npm run export-continents && npm run export-countries && npm run export-cities",
     "export-items": "npm run export-companies && npm run export-genres && npm run export-genders && npm run export-professions && npm run export-movies && npm run export-persons",
     "import": "npm run import-generics && npm run import-items",
@@ -46,8 +47,7 @@
   },
   "author": {
     "name": "danny",
-    "email": "dannyganatan@gmail.com",
-    "url": "https://www.ganatan.com/"
+    "email": "patrickkendall@live.com"
   },
   "license": "ISC",
   "dependencies": {

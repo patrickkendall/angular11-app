@@ -7,23 +7,23 @@
             <div class="col">
               <div class="d-flex md-form form-group mt-0">
                 <div class="disabled clearfix d-none d-md-block pt-2 ml-4">
-                  <i class="{{ icon }} text-primary mr-2"></i>
-                  <span class="text-primary font-weight-bold mr-4">{{ titleForm }}</span>
-                  <i class="fas fa-database {{ datasourceColor }} mr-2 ml-4 mr-2"></i>
-                  <span class="{{ datasourceColor }} ml-2">Datesource : </span>
-                  <span class="{{ datasourceColor }} ml-2">{{ datasource }}</span>
+                  <i class="{{ icon }} text-dark mr-2"></i>
+                  <span class="text-dark font-weight-bold mr-4">{{ titleForm }}</span>
+                  <i class="fas fa-database mr-2 ml-4 mr-2"></i>
+                  <span class="ml-2">Datesource : </span>
+                  <span class="ml-2">{{ datasource }}</span>
                 </div>
                 <a class="navbar-btn waves-effect waves-light ml-auto px-3 pt-2">
-                  <button [disabled]="!api" type="submit" class="btn btn-outline-primary btn-sm mb-2 ml-3"
+                  <button [disabled]="!api" type="submit" class="btn btn-outline-dark btn-sm mb-2 ml-3"
                     (click)="onCreate()"><i class="fas fa-plus fa-lg"></i></button>
                   <button [disabled]="form.invalid || !api" type="submit"
-                    class="btn btn-outline-primary btn-sm mb-2 ml-3" (click)="onUpdate()"><i
+                    class="btn btn-outline-dark btn-sm mb-2 ml-3" (click)="onUpdate()"><i
                       class="fas fa-save fa-lg"></i></button>
                   <button [disabled]="form.invalid || !api || item.id==undefined || item.id==null" type="submit"
-                    class="btn btn-outline-primary btn-sm mb-2 ml-3" (click)="onCopy()"><i
+                    class="btn btn-outline-dark btn-sm mb-2 ml-3" (click)="onCopy()"><i
                       class="fas fa-copy fa-lg"></i></button>
                   <button [disabled]="form.invalid || !api || item.id==undefined || item.id==null" type="submit"
-                    class="btn btn-outline-primary btn-sm mb-2 ml-3" (click)="onDelete()"><i
+                    class="btn btn-outline-dark btn-sm mb-2 ml-3" (click)="onDelete()"><i
                       class="fas fa-trash-alt fa-lg"></i></button>
                 </a>
               </div>
@@ -38,10 +38,10 @@
                     readonly>
                 </div>
                 <div class="form-group col-md-4">
-                  <label for="code" class="text-primary font-weight-bold">Code</label>
-                  <input type="text" formControlName="code" class="text-primary form-control font-weight-bold"
+                  <label for="code" class="text-dark font-weight-bold">Code</label>
+                  <input type="text" formControlName="code" class="text-dark form-control font-weight-bold"
                     placeholder="" id="code">
-                  <div *ngIf="code.invalid" class="alert alert-primary mt-2">
+                  <div *ngIf="code.invalid" class="alert alert-dark mt-2">
                     <div *ngIf="code.errors.required">
                       Code is required.
                     </div>
@@ -54,10 +54,10 @@
                   </div>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name" class="text-primary font-weight-bold">Name</label>
-                  <input type="text" formControlName="name" class="text-primary form-control font-weight-bold"
+                  <label for="name" class="text-dark font-weight-bold">Name</label>
+                  <input type="text" formControlName="name" class="text-dark form-control font-weight-bold"
                     placeholder="" id="name">
-                  <div *ngIf="name.invalid" class="alert alert-primary mt-2">
+                  <div *ngIf="name.invalid" class="alert alert-dark mt-2">
                     <div *ngIf="name.errors.required">
                       Name is required.
                     </div>
@@ -66,19 +66,19 @@
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="area" class="text-primary">Area</label>
-                  <input type="text" formControlName="area" class="text-primary form-control" placeholder="" id="area">
-                  <div *ngIf="area.invalid" class="alert alert-primary mt-2">
+                  <label for="area" class="text-dark">Area</label>
+                  <input type="text" formControlName="area" class="text-dark form-control" placeholder="" id="area">
+                  <div *ngIf="area.invalid" class="alert alert-dark mt-2">
                     <div *ngIf="area.errors.pattern">
                       Only numbers are allowed
                     </div>
                   </div>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="population" class="text-primary">Population</label>
-                  <input type="text" formControlName="population" class="text-primary form-control" placeholder=""
+                  <label for="population" class="text-dark">Population</label>
+                  <input type="text" formControlName="population" class="text-dark form-control" placeholder=""
                     id="population">
-                  <div *ngIf="population.invalid" class="alert alert-primary mt-2">
+                  <div *ngIf="population.invalid" class="alert alert-dark mt-2">
                     <div *ngIf="population.errors.pattern">
                       Only numbers are allowed
                     </div>
@@ -87,20 +87,20 @@
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="frenchName" class="text-primary">French Name</label>
-                  <input type="text" formControlName="frenchName" class="text-primary form-control" placeholder=""
+                  <label for="frenchName" class="text-dark">French Name</label>
+                  <input type="text" formControlName="frenchName" class="text-dark form-control" placeholder=""
                     id="frenchName">
-                  <div *ngIf="frenchName.invalid" class="alert alert-primary mt-2">
+                  <div *ngIf="frenchName.invalid" class="alert alert-dark mt-2">
                     <div *ngIf="frenchName.errors.required">
                       French Name is required.
                     </div>
                   </div>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="countriesNumber" class="text-primary">Countries Number</label>
-                  <input type="text" formControlName="countriesNumber" class="text-primary form-control" placeholder=""
+                  <label for="countriesNumber" class="text-dark">Countries Number</label>
+                  <input type="text" formControlName="countriesNumber" class="text-dark form-control" placeholder=""
                     id="countriesNumber">
-                  <div *ngIf="countriesNumber.invalid" class="alert alert-primary mt-2">
+                  <div *ngIf="countriesNumber.invalid" class="alert alert-dark mt-2">
                     <div *ngIf="countriesNumber.errors.pattern">
                       Only numbers are allowed
                     </div>

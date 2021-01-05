@@ -8,7 +8,7 @@ import { SmartphoneComponent } from './smartphone/smartphone.component';
 @NgModule({
   declarations: [
     TutorialComponent,
-    SmartphoneComponent
+    SmartphoneComponent,
   ],
   imports: [
     CommonModule,

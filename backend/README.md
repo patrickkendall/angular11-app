@@ -13,7 +13,7 @@
 * Change settings in postgresql-express-batch/app/config
 * File config/config.json
 * dbUser: "postgres" 
-* dbPassword: "Trustno1"   !  Change the Fox Mulder password by your password
+* dbPassword: ""   !  Change the Fox Mulder password by your password
 
 
 ```bash
@@ -39,7 +39,7 @@ npm run export
 * Change settings in postgresql-express-crud/app/config
 * File config/config.json
 * dbUser: "postgres"
-* dbPassword: "Trustno1"    !  Change the Fox Mulder password by your password
+* dbPassword: ""    !  Change the Fox Mulder password by your password
 
 ```bash
 

@@ -1,4 +1,4 @@
-import { Component, Injector } from '@angular/core';
+import { Component, Injector, OnInit } from '@angular/core';
 
 import { PageListComponent } from '../../components/page-list/page-list.component';
 
@@ -7,7 +7,8 @@ import { PageListComponent } from '../../components/page-list/page-list.componen
   templateUrl: './cities-list.component.html',
   styleUrls: ['./cities-list.component.css']
 })
-export class CitiesListComponent extends PageListComponent {
+export class CitiesListComponent extends PageListComponent implements OnInit {
+
 
   constructor(injector: Injector) {
     super(injector);
@@ -17,7 +18,7 @@ export class CitiesListComponent extends PageListComponent {
 
     this.endpoint = 'cities';
     this.link = 'cities';
-    this.placeholder = 'cities...';
+    this.placeholder = 'Search cities';
     this.results = 'Cities';
     this.found = 'cities';
     this.creation = 'City';
@@ -30,26 +31,26 @@ export class CitiesListComponent extends PageListComponent {
     this.columns = [
       {
         type: 'num',
-        title: { caption: 'N°', class: 'text-info font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
-        data: { field: 'N°', class: 'text-info text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
+        title: { caption: 'N°', class: 'text-dark font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
+        data: { field: 'N°', class: 'text-dark text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
       },
       {
         type: 'pos',
-        title: { caption: 'Pos', class: 'text-info font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
-        data: { field: 'Pos', class: 'text-info text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
+        title: { caption: 'Pos', class: 'text-dark font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
+        data: { field: 'Pos', class: 'text-dark text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
       },
       {
-        title: { caption: 'Id', class: 'text-info font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
-        data: { field: 'id', class: 'text-info text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
+        title: { caption: 'Id', class: 'text-dark font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
+        data: { field: 'id', class: 'text-dark text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
       },
       {
         type: 'wiki',
-        title: { caption: 'Wiki', class: 'text-center text-success' },
-        data: { field: 'wikipediaLink', class: 'text-center text-success' }
+        title: { caption: 'Wiki', class: 'text-center text-dark' },
+        data: { field: 'wikipediaLink', class: 'text-center text-dark' }
       },
       {
-        title: { caption: 'Name', class: 'text-primary font-weight-bold text-center' },
-        data: { field: 'name', class: 'text-primary font-weight-bold text-center' }
+        title: { caption: 'Name', class: 'text-dark font-weight-bold text-center' },
+        data: { field: 'name', class: 'text-dark font-weight-bold text-center' }
       },
       {
         type: 'checkbox',
@@ -58,39 +59,42 @@ export class CitiesListComponent extends PageListComponent {
       },
       {
         type: 'subfield',
-        title: { caption: 'Country', class: 'text-secondary font-weight-bold text-center d-none d-lg-table-cell d-xl-table-cell' },
+        title: { caption: 'Country', class: 'text-dark font-weight-bold text-center d-none d-lg-table-cell d-xl-table-cell' },
         data: {
           field: 'country',
           subfield: 'name',
-          class: 'text-secondary text-center d-none d-lg-table-cell d-xl-table-cell'
+          class: 'text-dark text-center d-none d-lg-table-cell d-xl-table-cell'
         }
       },
       {
         type: 'img',
-        title: { caption: 'Flag', class: 'text-secondary font-weight-bold text-center' },
+        title: { caption: 'Flag', class: 'text-dark font-weight-bold text-center' },
         data: { field: 'image', class: 'font-weight-bold text-center' }
       },
       {
         type: 'subfield',
-        title: { caption: 'Continent', class: 'text-secondary font-weight-bold text-center d-none d-lg-table-cell d-xl-table-cell' },
+        title: { caption: 'Continent', class: 'text-dark font-weight-bold text-center d-none d-lg-table-cell d-xl-table-cell' },
         data: {
           field: 'continent',
           subfield: 'name',
-          class: 'text-secondary text-center d-none d-lg-table-cell d-xl-table-cell'
+          class: 'text-dark text-center d-none d-lg-table-cell d-xl-table-cell'
         }
       },
       {
         type: 'subfield',
-        title: { caption: 'Code', class: 'text-secondary font-weight-bold text-center d-none d-lg-table-cell d-xl-table-cell' },
+        title: { caption: 'Code', class: 'text-dark font-weight-bold text-center d-none d-lg-table-cell d-xl-table-cell' },
         data: {
           field: 'continent',
           subfield: 'code',
-          class: 'text-secondary text-center d-none d-lg-table-cell d-xl-table-cell'
+          class: 'text-dark text-center d-none d-lg-table-cell d-xl-table-cell'
         }
       },
     ];
 
     super.initialize();
+  }
+
+  ngOnInit() {
   }
 
 }

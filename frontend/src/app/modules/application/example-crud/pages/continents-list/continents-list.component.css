@@ -2,3 +2,15 @@ td {
   cursor: pointer;
 }
 
+.search-button {
+  width: 200px;
+}
+
+.align-count:hover {
+  box-shadow: 6px 6px 6px #888888;
+}
+
+.search-input {
+  width: 200px !important;
+}
+

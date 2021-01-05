@@ -23,7 +23,7 @@ export class MoviesImagesListComponent extends PageListComponent implements OnIn
 
     this.endpoint = 'movies';
     this.link = 'movies';
-    this.placeholder = 'movies...';
+    this.placeholder = 'Search movies';
     this.results = 'Movies';
     this.found = 'movies';
     this.creation = 'Movie';
@@ -35,8 +35,8 @@ export class MoviesImagesListComponent extends PageListComponent implements OnIn
 
     this.columns = [
       { name: 'Id', field: 'id', align: 'left', color: 'black', font: '' },
-      { name: 'Name', field: 'name', align: 'left', color: 'text-primary', font: 'bold' },
-      { name: 'Date', field: 'releaseDate', align: 'center', color: 'text-primary', font: '' },
+      { name: 'Name', field: 'name', align: 'left', color: 'text-dark', font: 'bold' },
+      { name: 'Date', field: 'releaseDate', align: 'center', color: 'text-dark', font: '' },
     ];
 
     super.initialize();

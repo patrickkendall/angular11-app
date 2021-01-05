@@ -1,27 +1,37 @@
+
+<div class="">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Form Multi</h5>
+      <hr>
+      <p class="card-text">Smooth use of reactive form groups</p>
+    </div>
+  </div>
+  <br>
 <div class="container-fluid mb-5">
-  <div class="row mb-5">
-    <div class="col mt-5">
+  <div class="">
+    <div class="">
 
       <div id="exampleForms">
-        <div class="text-center">
-          <button class="btn btn-outline-primary font-weight-bold" data-bs-toggle="collapse" data-target="#form1">Form
+        <div class="">
+          <button class="btn btn-outline-dark font-weight-bold" data-bs-toggle="collapse" data-target="#form1">Form
             Control</button>
-          <button class="btn btn-outline-success  font-weight-bold ml-4" data-bs-toggle="collapse"
+          <button class="btn btn-outline-dark  font-weight-bold ml-4" data-bs-toggle="collapse"
             data-target="#form2">Form
             Group</button>
-          <button class="btn btn-outline-danger  font-weight-bold ml-4" data-bs-toggle="collapse" data-target="#form3">Form
+          <button class="btn btn-outline-dark  font-weight-bold ml-4" data-bs-toggle="collapse" data-target="#form3">Form
             Builder</button>
         </div>
 
-        <div class="accordion-group">
+        <div class="">
 
           <div class="collapse show" id="form1" data-parent="#exampleForms">
-            <div class="container-fluid mb-5">
-              <div class="row mb-5">
-                <div class="col-4 mt-5">
+            <div class="container-fluid">
+              <div class="mb-5">
+                <div class="mt-5">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title text-primary font-weight-bold">Result With formControl
+                      <h5 class="card-title text-dark font-weight-bold">Result With formControl
                       </h5>
                       <br><span class="font-weight-bold">ExampleForm1 : Value</span><br><br>
                       name : {{ name.value | json }}<br>
@@ -31,21 +41,21 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-8 mt-5">
+                <div class="mt-5">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title text-primary font-weight-bold">Reactive Form with
+                      <h5 class="card-title text-dark font-weight-bold">Reactive Form with
                         FormControl</h5>
                       <div class="form-row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group">
                           <label for="name">Name</label>
                           <input type="text" class="form-control" [formControl]="name">
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group">
                           <label for="email">Email</label>
                           <input type="email" class="form-control" [formControl]="email">
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group">
                           <label for="job">Job</label>
                           <select class="form-control" [formControl]="job">
                             <option>Jedi</option>
@@ -54,14 +64,14 @@
                         </div>
                       </div>
                       <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group">
                           <label for="comment">Comment</label>
                           <textarea class="form-control" rows="2" [formControl]="comment"></textarea>
                         </div>
                       </div>
-                      <div class="form-row justify-content-center">
-                        <button (click)="onSetValueForm1()" type="submit" class="btn btn-primary mr-4">SetValue</button>
-                        <button (click)="onResetForm1()" type="submit" class="btn btn-primary mr-4">Reset</button>
+                      <div class="form-row">
+                        <button (click)="onSetValueForm1()" type="submit" class="btn btn-dark mr-4">SetValue</button>
+                        <button (click)="onResetForm1()" type="submit" class="btn btn-dark mr-4">Reset</button>
                       </div>
                     </div>
                   </div>
@@ -72,34 +82,34 @@
 
           <div class="collapse" id="form2" data-parent="#exampleForms">
             <div class="container-fluid mb-5">
-              <div class="row mb-5">
-                <div class="col-4 mt-5">
+              <div class="mb-5">
+                <div class=" mt-5">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title text-success font-weight-bold">Result with FormGroup &
+                      <h5 class="card-title  font-weight-bold">Result with FormGroup &
                         FormControl</h5>
                       <br><span class="font-weight-bold">ExampleForm2 : Value</span><br><br>
                       <div [innerHTML]="exampleForm2.value | prettyjson"></div>
                     </div>
                   </div>
                 </div>
-                <div class="col-8 mt-5">
+                <div class=" mt-5">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title text-success font-weight-bold">Reactive Form with
+                      <h5 class="card-title  font-weight-bold">Reactive Form with
                         FormGroup & FormControl
                       </h5>
                       <form [formGroup]="exampleForm2">
                         <div class="form-row">
-                          <div class="form-group col-md-4">
+                          <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" class="form-control" formControlName="name">
                           </div>
-                          <div class="form-group col-md-4">
+                          <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" class="form-control" formControlName="email">
                           </div>
-                          <div class="form-group col-md-4">
+                          <div class="form-group">
                             <label for="job">Job</label>
                             <select class="form-control" formControlName="job">
                               <option>Jedi</option>
@@ -108,11 +118,11 @@
                           </div>
                         </div>
                         <div class="form-row">
-                          <div class="form-group col-md-6">
+                          <div class="form-group">
                             <label for="comment">Comment</label>
                             <textarea class="form-control" rows="2" formControlName="comment"></textarea>
                           </div>
-                          <div class="form-group col-md-6">
+                          <div class="form-group">
                             <table class="table table-bordered table-sm">
                               <thead>
                                 <tr>
@@ -126,10 +136,10 @@
                         </div>
                         <div class="form-row justify-content-center">
                           <button (click)="onSetValueForm2()" type="submit"
-                            class="btn btn-success mr-4">SetValue</button>
+                            class="btn btn- mr-4">SetValue</button>
                           <button (click)="onPatchValueForm2()" type="submit"
-                            class="btn btn-success mr-4">PatchValue</button>
-                          <button (click)="onResetForm2()" type="submit" class="btn btn-success mr-4">Reset</button>
+                            class="btn btn- mr-4">PatchValue</button>
+                          <button (click)="onResetForm2()" type="submit" class="btn btn- mr-4">Reset</button>
                         </div>
                       </form>
                     </div>
@@ -142,32 +152,32 @@
           <div class="collapse" id="form3" data-parent="#exampleForms">
             <div class="container-fluid mb-5">
               <div class="row mb-5">
-                <div class="col-4 mt-5">
+                <div class="mt-5">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title text-danger font-weight-bold">Result with FormBuilder
+                      <h5 class="card-title text-dark font-weight-bold">Result with FormBuilder
                       </h5>
                       <br><span class="font-weight-bold">ExampleForm3 : Value</span><br><br>
                       <div [innerHTML]="exampleForm3.value  "></div>
                     </div>
                   </div>
                 </div>
-                <div class="col-8 mt-5">
+                <div class="mt-5">
                   <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title text-danger font-weight-bold">Reactive Form with
+                      <h5 class="card-title text-dark font-weight-bold">Reactive Form with
                         FormBuilder</h5>
                       <form [formGroup]="exampleForm3">
                         <div class="form-row">
-                          <div class="form-group col-md-4">
+                          <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" class="form-control" formControlName="name">
                           </div>
-                          <div class="form-group col-md-4">
+                          <div class="form-group">
                             <label for="email">email</label>
                             <input type="email" class="form-control" formControlName="email">
                           </div>
-                          <div class="form-group col-md-4">
+                          <div class="form-group">
                             <label for="job">Job</label>
                             <select class="form-control" formControlName="job">
                               <option>Jedi</option>
@@ -178,11 +188,11 @@
                         <div class="form-row">
                         </div>
                         <div class="form-row">
-                          <div class="form-group  col-md-6">
+                          <div class="form-group">
                             <label for="comment">Comment</label>
                             <textarea class="form-control" rows="2" formControlName="comment"></textarea>
                           </div>
-                          <div class="form-group col-md-6">
+                          <div class="form-group">
                             <table class="table table-bordered table-sm">
                               <thead>
                                 <tr>
@@ -194,7 +204,7 @@
                             </table>
                           </div>
                         </div>
-                        <div class="form-row justify-content-center">
+                        <div class="form-row">
                           <button (click)="onUpdateForm3()" type="submit" class="btn btn-danger mr-4">Load</button>
                           <button (click)="onResetForm3()" type="submit" class="btn btn-danger mr-4">Reset</button>
                         </div>

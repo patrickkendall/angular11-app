@@ -1,0 +1,17 @@
+.search-button {
+    margin-top: -5px;
+    width: 200px !important;
+}
+
+.align-count:hover {
+    box-shadow: 6px 6px 6px #888888;
+}
+
+.search-input {
+    margin-top: 5px;
+    width: 200px !important;
+}
+
+.padding-5 {
+    padding: 5px;
+}

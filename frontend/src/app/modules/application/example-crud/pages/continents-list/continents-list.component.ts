@@ -19,7 +19,7 @@ export class ContinentsListComponent extends PageListComponent {
     this.link = 'continents';
     this.linkRoute = 'continents';
 
-    this.placeholder = 'continents...';
+    this.placeholder = 'Search continents';
     this.results = 'Continents';
     this.found = 'continents';
     this.creation = 'Continent';
@@ -31,26 +31,26 @@ export class ContinentsListComponent extends PageListComponent {
     this.columns = [
       {
         type: 'num',
-        title: { caption: 'N°', class: 'text-info font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
-        data: { field: 'N°', class: 'text-info text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
+        title: { caption: 'N°', class: 'text-dark font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
+        data: { field: 'N°', class: 'text-dark text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
       },
       {
         type: 'pos',
-        title: { caption: 'Pos', class: 'text-info font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
-        data: { field: 'Pos', class: 'text-info text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
+        title: { caption: 'Pos', class: 'text-dark font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
+        data: { field: 'Pos', class: 'text-dark text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
       },
       {
-        title: { caption: 'Id', class: 'text-info font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
-        data: { field: 'id', class: 'text-info text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
+        title: { caption: 'Id', class: 'text-dark font-weight-bold text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' },
+        data: { field: 'id', class: 'text-dark text-center d-none d-md-table-cell d-lg-table-cell d-xl-table-cell' }
       },
       {
         type: 'wiki',
-        title: { caption: 'Wiki', class: 'text-center text-success' },
-        data: { field: 'wikipediaLink', class: 'text-center text-success' }
+        title: { caption: 'Wiki', class: 'text-center text-dark' },
+        data: { field: 'wikipediaLink', class: 'text-center text-dark' }
       },
       {
-        title: { caption: 'Name', class: 'text-primary font-weight-bold text-center' },
-        data: { field: 'name', class: 'text-primary font-weight-bold text-center' }
+        title: { caption: 'Name', class: 'text-dark font-weight-bold text-center' },
+        data: { field: 'name', class: 'text-dark font-weight-bold text-center' }
       },
       {
         title: { caption: 'Code', class: 'text-center' },

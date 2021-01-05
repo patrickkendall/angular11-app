@@ -1,25 +1,34 @@
+
+<div class="">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Form Array</h5>
+      <hr>
+      <p class="card-text">Array form builder.</p>
+    </div>
+  </div>
 <div class="card">
   <div class="card-body">
     <div class="row">
-      <div class="col-7">
-        <h5 class="card-title text-center text-primary">FormArray</h5>
+      <div>
+        <h5 class="card-title text-center text-dark">FormArray</h5>
         <form [formGroup]="exampleForm">
           <div class="form-row">
-            <div class="form-group col-md-9">
+            <div class="form-group">
               <label for="name">Name</label>
               <input type="text" class="form-control" id="name" formControlName="name">
             </div>
-            <div class="form-group col-md-3">
+            <div class="form-group">
               <label for="releaseDate">Date</label>
               <input type="text" class="form-control" id="releaseDate" formControlName="releaseDate">
             </div>
           </div>
           <div class="card p-4">
-            <h5 class="card-title text-center text-info">Arrays</h5>
+            <h5 class="card-title text-center text-dark">Arrays</h5>
             <div class="form-row">
               <div formArrayName="characters">
-                <button type="submit" (click)="addCharacter()" class="btn btn-primary mr-2">Add</button>
-                <button type="submit" (click)="updateControls()" class="btn btn-primary mr-2">Delete</button>
+                <button type="submit" (click)="addCharacter()" class="btn btn-dark mr-2">Add</button>
+                <button type="submit" (click)="updateControls()" class="btn btn-dark mr-2">Delete</button>
                 <table class="table table-sm table-bordered">
                   <thead>
                     <tr>
@@ -36,13 +45,16 @@
                 </table>
               </div>
             </div>
+            <br>
           </div>
-          <button type="submit" (click)="resetControls()" class="btn btn-primary mr-2">Reset Controls</button>
-          <button type="submit" (click)="updateControls()" class="btn btn-primary mr-2">Update Controls</button>
+          <button type="submit" (click)="resetControls()" class="btn btn-dark mr-2">Reset Controls</button>
+          <button type="submit" (click)="updateControls()" class="btn btn-dark mr-2">Update Controls</button>
         </form>
+        <br>
       </div>
       <div class="col-5">
-        <h5 class="card-title text-center text-primary">FormArray Result</h5>
+        <h5 class="card-title text-dark">FormArray Result</h5>
+        <br>
         <strong>Valid</strong> : {{ exampleForm.valid }}<br>
         <strong>Form Value</strong>
         <div [innerHTML]="exampleForm.value | prettyjson"></div>

@@ -13,11 +13,6 @@
     "build:ssr": "ng build --prod && ng run angular-starter:server:production",
     "prerender": "ng run angular-starter:prerender"
   },
-  "author": {
-    "name": "danny",
-    "email": "dannyganatan@gmail.com",
-    "url": "https://www.ganatan.com/"
-  },
   "license": "ISC",
   "private": true,
   "dependencies": {
@@ -34,12 +29,15 @@
     "@asymmetrik/ngx-leaflet": "8.1.0",
     "@fortawesome/fontawesome-free": "5.15.1",
     "@nguniversal/express-engine": "11.0.1",
+    "@tensorflow-models/coco-ssd": "^2.2.1",
+    "@tensorflow-models/toxicity": "^1.2.2",
+    "@tensorflow/tfjs": "^2.8.2",
     "bootstrap": "5.0.0-beta1",
-    "express": "4.17.1",
     "chart.js": "2.9.4",
+    "express": "4.17.1",
+    "jquery": "3.5.1",
     "leaflet": "1.7.1",
     "ng2-charts": "2.4.2",
-    "jquery": "3.5.1",
     "rxjs": "6.6.3",
     "tslib": "2.0.3",
     "zone.js": "0.11.3"

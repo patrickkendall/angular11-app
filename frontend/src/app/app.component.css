@@ -1,0 +1,81 @@
+* {
+    color: gray !important;
+}
+
+.navbar {
+    height: 50px !important;
+}
+
+.name-title {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding-left: 10px;
+}
+
+.backgray {
+    background-color: gray;
+    z-index: 5;
+}
+
+a {
+    cursor: pointer;
+    margin: 5px;
+}
+
+a:hover {
+    color:black !important;
+}
+
+a:active {
+    color:black !important;    
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.navbar-brand {
+    color: gray;
+}
+
+@media (max-width: 800px) { 
+    .navbar-nav {
+        display: none;
+    }
+}
+
+.button-z {
+    z-index: 10;
+}
+
+.button-z-align {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    background-color: rgb(48, 48, 48);
+    right: 5px;
+}
+
+.menu-title {
+    text-align: center;
+    color: white;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.bd-sidebar:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.fa-angular {
+    margin-top: -5px;
+    font-size: 40px;
+}

@@ -22,13 +22,12 @@ export class ExerciceComponent implements OnInit {
   }
 
   updateControls(): void {
-    this.name.setValue('Avengers: Endgame');
+    this.name.setValue('Star Wars');
     this.releaseDate.setValue('26/04/2019');
     this.franchise.setValue(true);
     this.budget.setValue('356000000');
     this.worldwide.setValue('2797800564');
-    this.summary.setValue('After the devastating events of Avengers: Infinity War (2018), ' +
-      'the universe is in ruins.');
+    this.summary.setValue('Set in a long time ago in a galaxy far, far away.');
   }
 
   resetControls(): void {

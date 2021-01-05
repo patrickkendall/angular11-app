@@ -1,31 +1,39 @@
+
+<div class="">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Form Group</h5>
+      <hr>
+      <p class="card-text">A Reactive Form Group is a good way to build forms and with Angulars built in FormsModel and ReactiveFormsModel it is easy to build great a schema that translates into a JSON message that can be fetched by an API to perform a CRUD operation with that data. Using the built in Angular forms module, you can see when the form changes in the input box it also changes in the JSON output. This is taking advantage of the two-way data binding Angular has to offer. Databases can easily recieive JSON data and this acts as a great way to begin shapping the data that your website needs to function. With a JSON based database however it is much easier to manage as the data becomes more complex because GraphQL and databases like FaunaDB can help build universal GraphQL queries and mutations to perform CRUD operations on various cloud and local database options.</p>
+    </div>
+  </div>
 <div class="card">
   <div class="card-body">
     <div class="row">
-      <div class="col-7">
-        <h5 class="card-title text-center text-primary">FormGroup</h5>
+      <div>
         <form [formGroup]="exampleForm">
           <div class="form-row">
-            <div class="form-group col-md-12">
+            <div class="form-group ">
               <label for="name">Name</label>
               <input type="text" class="form-control" id="name" formControlName="name">
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-md-4">
+            <div class="form-group ">
               <label for="releaseDate">Date</label>
               <input type="text" class="form-control" id="releaseDate" formControlName="releaseDate">
             </div>
-            <div class="form-group col-md-4">
+            <div class="form-group ">
               <label for="budget">Budget</label>
-              <input type="text" class="form-control" id="budget" formControlName="budget">
+              <input type="number" class="form-control" id="budget" formControlName="budget">
             </div>
-            <div class="form-group col-md-4">
+            <div class="form-group ">
               <label for="worldwide">Worlwide</label>
               <input type="text" class="form-control" id="worldwide" formControlName="worldwide">
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-md-12">
+            <div class="form-group ">
               <label for="summary">Summary</label>
               <textarea class="form-control" id="summary" rows="2" formControlName="summary"></textarea>
             </div>
@@ -37,13 +45,15 @@
                 Franchise
               </label>
             </div>
+            <br>
           </div>
-          <button type="submit" (click)="resetControls()" class="btn btn-primary mr-2">Reset Controls</button>
-          <button type="submit" (click)="updateControls()" class="btn btn-primary mr-2">Update Controls</button>
+          <button type="submit" (click)="resetControls()" class="btn btn-dark mr-2">Reset Controls</button>
+          <button type="submit" (click)="updateControls()" class="btn btn-dark mr-2">Update Controls</button>
         </form>
+        <br>
       </div>
       <div class="col-5">
-        <h5 class="card-title text-center text-primary">FormGroup Result</h5>
+        <h5 class="card-title text-center text-dark">FormGroup Result</h5>
         <strong>Value</strong>
         <div [innerHTML]="exampleForm.value | prettyjson"></div>
       </div>

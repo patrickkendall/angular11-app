@@ -1,4 +1,10 @@
-<app-search-bar [searchField]="searchField" [itemsCount]="itemsCount" [icon]="icon" [results]="results"
+<div class="card">
+  <div>
+      <h1 class="text-dark">Countries</h1>
+  </div>
+</div>
+
+<app-search-bar [searchField]="searchField" [itemsCount]="itemsCount" [results]="results" [icon]="icon"
   [placeholder]="placeholder" (search)="onSearch($event)"></app-search-bar>
 
 <div class="row" *ngIf="loaded && itemsCount==0">

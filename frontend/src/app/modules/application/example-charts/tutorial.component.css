@@ -1,0 +1,13 @@
+a {
+    color: rgb(79, 177, 252) !important;
+}
+
+.h {
+    color: black !important;
+    text-decoration: none;
+    cursor: default;
+}
+
+* {
+    color: black;
+}

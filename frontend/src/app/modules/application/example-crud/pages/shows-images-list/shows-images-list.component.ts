@@ -23,7 +23,7 @@ export class ShowsImagesListComponent extends PageListComponent implements OnIni
 
     this.endpoint = 'shows';
     this.link = 'shows';
-    this.placeholder = 'shows...';
+    this.placeholder = 'Search shows';
     this.results = 'Shows';
     this.found = 'shows';
     this.creation = 'Show';
@@ -43,11 +43,7 @@ export class ShowsImagesListComponent extends PageListComponent implements OnIni
   }
 
   ngOnInit(): void {
-    this.titleService.setTitle('New TV Shows : angular.ganatan');
-    this.meta.addTag({
-      name: 'angular.ganatan',
-      content: 'danny ganatan'
-    });
+    this.titleService.setTitle('Angular');
     this.meta.updateTag(
       {
         name: 'description',

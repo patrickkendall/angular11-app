@@ -37,6 +37,11 @@ const routes: Routes = [
           .then(mod => mod.ExerciceModule)
       },
       {
+        path: 'toxic-class',
+        loadChildren: () => import('./07-toxic-class/toxic-class.module')
+          .then(mod => mod.ToxicClassModule)
+      },
+      {
         path: '',
         redirectTo: '/typescript/modules',
         pathMatch: 'full'

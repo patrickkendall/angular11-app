@@ -1,11 +1,11 @@
 export const SONGS: any[] =
   [
     {
-      year: '2018',
+      year: '1985',
       items: [
-        { link: 'S6baf8BqKDI', top: '1', artist: 'Lartiste featuring Caroliina', title: 'Mafiosa' },
-        { link: 'kutk2XHEZNU', top: '2', artist: 'Vald', title: 'Désaccordé' },
-        { link: 'iPGgnzc34tY', top: '3', artist: 'Aya Nakamura', title: 'Djadja' },
+        { link: 'S6baf8BqKDI', top: '1', artist: 'Wham!', title: 'Careless Whisper' },
+        { link: 'kutk2XHEZNU', top: '2', artist: 'Madonna', title: 'Like a Virgin' },
+        { link: 'iPGgnzc34tY', top: '3', artist: 'Wake me Up Before You Go-Go', title: 'Djadja' },
         { link: 'fC6YV65JJ6g', top: '4', artist: 'Maître Gims & Vianney', title: 'La Même' },
         { link: 'hQU_pgyCL6k', top: '5', artist: 'Dadju', title: 'Bob Marley' },
         { link: 'xpVfcZ0ZcFM', top: '6', artist: 'Drake	God\'s', title: 'Plan' },
@@ -16,7 +16,7 @@ export const SONGS: any[] =
       ]
     },
     {
-      year: '2017',
+      year: '1970s',
       items: [
         { link: 'JGwWNGJdvx8', top: '1', artist: 'Ed Sheeran', title: 'Shape of You' },
         { link: 'kJQP7kiw5Fk', top: '2', artist: 'Luis Fonsi featuring Daddy Yankee', title: 'Despacito' },
@@ -46,16 +46,16 @@ export const SONGS: any[] =
       ]
     },
     {
-      year: '2015',
+      year: 'All Time',
       items: [
-        { link: 'jGflUbPQfW8', top: '1', artist: 'OMI', title: 'Cheerleader (Felix Jaehn remix)' },
-        { link: 'OPf0YbXqDm0', top: '2', artist: 'Mark Ronson featuring Bruno Mars', title: 'Uptown Funk' },
-        { link: 'YqeW9_5kURI', top: '3', artist: 'Major Lazer & DJ Snake featuring MØ', title: 'Lean On' },
-        { link: 'pwKkjLOHd7s', top: '4', artist: 'Marina Kaye', title: 'Homeless' },
-        { link: 'YQHsXMglC9A', top: '5', artist: 'Adele', title: 'Hello' },
+        { link: 'jGflUbPQfW8', top: '1', artist: 'Beyonce', title: 'Single Ladies' },
+        { link: 'OPf0YbXqDm0', top: '2', artist: 'Drake', title: 'HYFR' },
+        { link: 'YqeW9_5kURI', top: '3', artist: 'Eminem', title: 'No Love' },
+        { link: 'pwKkjLOHd7s', top: '4', artist: 'Red Hot Chili Peppers', title: 'Under the Bridge' },
+        { link: 'YQHsXMglC9A', top: '5', artist: '', title: 'Hello' },
         { link: 'Mptdcx36qZU', top: '6', artist: 'Feder featuring Lyse', title: 'Goodbye' },
         { link: 'PVjiKRfKpPI', top: '7', artist: 'Hozier', title: 'Take Me to Church' },
-        { link: 'rs40yxHjTxQ', top: '8', artist: 'Christine and the Queens', title: 'Christine' },
+        { link: 'rs40yxHjTxQ', top: '8', artist: 'TOOL', title: 'Pneuma' },
         { link: 'W6cp9FakTlo', top: '9', artist: 'Louane', title: 'Avenir' },
         { link: 'hXI8RQYC36Q', top: '10', artist: 'Nicky Jam & Enrique Iglesias', title: 'El Perdón' },
       ]

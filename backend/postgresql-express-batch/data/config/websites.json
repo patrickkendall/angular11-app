@@ -1,0 +1,9 @@
+{
+  "table": "websites",
+  "endpoint": "websites",
+  "caption": "Websites",
+  "file": "websites.json",
+  "key": "name",
+  "data": "name",
+  "name": "name"
+}
